@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    font-family: Oswald;
+    display: flex;
+    justify-content: space-between;
+    background-color: #00000058;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+nav .logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+}
+nav .logo-container img{
+    height: 20px;
+    width: 100px;
+}
+
+label, #toggle{
+    display: none;
+}
+
+nav .menu-container{
+    display: flex;
+}
+
+nav .menu-container ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+nav .menu-container ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+nav ul li a:hover{
+    color: #acacac;
+}
+
+nav .logos-rs-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-width: 150px;
+}
+
+nav .logos-rs-container a{
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+nav .logos-rs-container a:hover{
+    color: #acacac;
+}
+
+main .backgroundimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    background-image: url("../img/h5-revolution-img-1.jpg");
+}
+
+main .section-container{
+    display: flex;
+    background-color: #C59D5F;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    padding: 40px 40px;
+}
+
+main .section-container p{
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+main .traditions-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main .beer-tradition{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+main .img-bestbeer{
+    background-image: url("../img/h5-el-holder-img-1-1.jpg");
+  
+}
+
+main .img-drinkbeer{
+    background-image: url("../img/h5-el-holder-img-2.jpg");
+}
+
+.main-img{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.responsive1{
+    display: flex;
+}
+
+.responsive2{
+    display: flex;
+}
+
+.main-img img{
+    width: 50%;
+}
+
+
+main .pub-story{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+main h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+main h3{
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+main .beer-tradition p{
+    font-family: Raleway;
+    margin-bottom: 30px;
+}
+
+main .pub-story p{
+    font-family: Raleway;
+    margin-bottom: 30px;
+}
+
+main a{
+    background-color: #C59D5F;
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+main a:hover{
+    color: #acacac;
+}
+
+main ul{
+    list-style-type: none;
+}
+
+main .galerie{
+    display: flex;
+}
+
+main .img-galerie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+main .img-galerie img{
+    transition: 0.5s;
+}
+
+main .img-galerie img:hover{
+    transform: scale(1.1)
+}
+
+main .img-galerie i {
+    font-size: 80px;
+    position: absolute;
+    color: #fff;
+    z-index: -1;
+}
+
+main .img-galerie:hover i{
+    z-index: 5;
+    transform: rotate(90deg);
+    transition: 1s;
+}
+
+.services{
+    font-family: Oswald;
+    display: flex;
+    margin: 0px 200px 0px 200px;
+}
+
+.bloc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    padding: 50px;
+}
+
+.bloc:hover img, .bloc:hover h4{
+    filter: sepia(100%);
+    color: #C59D5F;
+}
+
+.bloc h4{
+    margin: 30px 0px 0px 0px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+
+
+.bloc p{
+    text-align: center;
+}
+
+.parallaxe{
+    background-image: url("../img/h5-parallax-img-2.jpg");
+    background-attachment: fixed;
+    min-height: 250px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallaxe-texte{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Oswald;
+}
+
+.parallaxe-texte h5{
+    font-size: 60px;
+}
+
+.google{
+    position: relative;
+}
+
+.google iframe{
+    filter: invert(1) grayscale(1);
+    display: block;
+}
+
+.degrader{
+    min-height: 100px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 22%, rgba(255,255,255,0) 70%, rgba(0,0,0,1) 100%);
+    z-index: 5;
+    width: 100%;
+    top: 0;
+    height: 100%;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    min-height: 100px;
+}
+
+@media screen and (max-width: 800px){
+
+    nav .menu-container ul li a{
+        padding: 10px 100px 10px 100px;
+    }
+    
+    main .backgroundimg img{
+        max-width: 100%;
+    }
+
+    .responsive1{
+        flex-direction: column;
+    }
+
+    .responsive2{
+        flex-direction: column-reverse;
+    }
+
+    .galerie{
+        flex-direction: column;
+    }
+
+    .galerie img{
+        width: 100%;
+    }
+
+    .services{
+        flex-direction: column;
+    }
+
+    .bloc{
+        padding: 0;
+    }
+
+
+    label{
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav
+    {
+        height: 60px;
+    }
+
+    nav .menu-container {
+        display: none;
+        flex-direction: column;
+        background: #00000058;
+
+    }
+
+    nav .menu-container a {
+        width: 50%;
+    }
+
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+
+    #toggle:checked + .menu-container {
+        top: 60px;
+        position: absolute;
+        display: flex;
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+    }
+    #toggle:checked + .menu-container ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
